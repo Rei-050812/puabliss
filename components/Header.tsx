@@ -1,0 +1,143 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { LOGO_IMAGE, SALON_INFO } from "@/lib/data";
+
+const NAV_ITEMS = [
+  { label: "サロン紹介", href: "#about" },
+  { label: "サービス", href: "#service" },
+  { label: "ギャラリー", href: "#gallery" },
+  { label: "アクセス", href: "#access" },
+  { label: "お問い合わせ", href: "#contact" },
+];
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const handleNavClick = (href: string) => {
+    setIsOpen(false);
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? "bg-[#faf8f5]/95 shadow-sm backdrop-blur-md" : "bg-[#faf8f5]/90 backdrop-blur-sm"
+        } border-b border-[#e8dcc8]`}
+      >
+        <div className="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
+          {/* Logo */}
+          <a
+            href="#top"
+            onClick={() => handleNavClick("#top")}
+            className="flex items-center gap-2"
+          >
+            <div className="w-9 h-9 relative flex-shrink-0">
+              <Image
+                src={LOGO_IMAGE.src}
+                alt={LOGO_IMAGE.alt}
+                fill
+                className="object-contain"
+                sizes="36px"
+              />
+            </div>
+            <span className="font-bold text-sm text-[#3d2b1f] tracking-wide">
+              {SALON_INFO.name}
+            </span>
+          </a>
+
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-7">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => handleNavClick(item.href)}
+                className="text-xs text-[#3d2b1f] hover:text-[#8aab8a] transition-colors tracking-wide"
+              >
+                {item.label}
+              </button>
+            ))}
+            <a
+              href={SALON_INFO.lineUrl}
+              className="bg-[#8aab8a] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#7a9b7a] transition-colors"
+            >
+              LINEで予約
+            </a>
+          </nav>
+
+          {/* Hamburger */}
+          <button
+            className="md:hidden flex flex-col gap-[5px] p-2"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="メニュー"
+          >
+            <span
+              className={`block w-5 h-0.5 bg-[#3d2b1f] rounded transition-all duration-300 ${
+                isOpen ? "rotate-45 translate-y-[7px]" : ""
+              }`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-[#3d2b1f] rounded transition-all duration-300 ${
+                isOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block w-5 h-0.5 bg-[#3d2b1f] rounded transition-all duration-300 ${
+                isOpen ? "-rotate-45 -translate-y-[7px]" : ""
+              }`}
+            />
+          </button>
+        </div>
+      </header>
+
+      {/* Mobile drawer */}
+      <div
+        className={`fixed inset-0 z-40 transition-all duration-300 md:hidden ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        {/* Overlay */}
+        <div
+          className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${
+            isOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setIsOpen(false)}
+        />
+        {/* Drawer */}
+        <nav
+          className={`absolute top-16 left-0 right-0 bg-[#faf8f5] border-b border-[#e8dcc8] transition-transform duration-300 ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          {NAV_ITEMS.map((item) => (
+            <button
+              key={item.href}
+              onClick={() => handleNavClick(item.href)}
+              className="block w-full text-left px-6 py-4 text-sm text-[#3d2b1f] border-b border-[#e8dcc8] hover:bg-[#f5f0e8] transition-colors"
+            >
+              {item.label}
+            </button>
+          ))}
+          <div className="p-4">
+            <a
+              href={SALON_INFO.lineUrl}
+              className="block bg-[#06C755] text-white text-sm font-bold text-center py-3 rounded-full"
+            >
+              LINEで予約する
+            </a>
+          </div>
+        </nav>
+      </div>
+    </>
+  );
+}
