@@ -53,13 +53,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
-        <span className="text-white/60 text-[9px] tracking-widest">SCROLL</span>
-        <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
-          <path d="M6 0v16M1 11l5 5 5-5" stroke="rgba(255,255,255,0.6)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </div>
     </section>
   );
 }
