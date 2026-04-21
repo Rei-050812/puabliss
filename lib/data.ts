@@ -20,8 +20,8 @@ export const SALON_INFO = {
   closedDay: "不定休",
   tel: "",
   lineUrl: "https://lin.ee/zPe7CLp",
-  instagramUrl: "https://www.instagram.com/pua_briss/",
-  instagramHandle: "@pua_briss",
+  instagramUrl: "https://www.instagram.com/pua_bliss/",
+  instagramHandle: "@pua_bliss",
   conceptText:
     "大切な家族であるわんちゃんを、やさしく丁寧にお預かりします。一頭一頭の性格やペースに合わせ、無理のないトリミングを心がけています。\n\n初めての子やトリミングが苦手な子にも配慮した施術で、見た目の可愛さだけでなく、お家でも過ごしやすいスタイルをご提案します。\n\nまた、ドッグショーへの参加などを通じて、日々技術の向上に努めています。",
   deliveryService: "送迎サービスあり（要相談）",
