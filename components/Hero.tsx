@@ -30,9 +30,9 @@ export default function Hero() {
             やさしいトリミングを。
           </h1>
           <p className="text-[#e8dcc8]/90 text-sm mb-8 leading-relaxed">
-            はじめてでも安心して任せられるサロン。
+            はじめての子も、苦手な子も大歓迎。
             <br />
-            その子のペースに寄り添う、やさしいケア。
+            その子のペースに寄り添う、やさしいトリミングをお届けします。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
