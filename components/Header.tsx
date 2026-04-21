@@ -32,7 +32,7 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-[#faf8f5]/95 shadow-sm backdrop-blur-md" : "bg-[#faf8f5]/90 backdrop-blur-sm"
+          scrolled ? "bg-white shadow-sm" : "bg-white"
         } border-b border-[#e8dcc8]`}
       >
         <div className="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
@@ -40,20 +40,17 @@ export default function Header() {
           <a
             href="#top"
             onClick={() => handleNavClick("#top")}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
-            <div className="w-9 h-9 relative flex-shrink-0">
+            <div className="relative h-12 w-44 flex-shrink-0">
               <Image
                 src={LOGO_IMAGE.src}
                 alt={LOGO_IMAGE.alt}
                 fill
-                className="object-contain"
-                sizes="36px"
+                className="object-contain object-left"
+                sizes="144px"
               />
             </div>
-            <span className="font-bold text-sm text-[#3d2b1f] tracking-wide">
-              {SALON_INFO.name}
-            </span>
           </a>
 
           {/* Desktop nav */}
