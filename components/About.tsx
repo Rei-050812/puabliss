@@ -8,11 +8,8 @@ export default function About() {
         <h2 className="font-handwritten text-5xl md:text-6xl text-[#4d6b44] mb-1 leading-none">
           About
         </h2>
-        <p className="text-[#3d2b1f] text-sm font-bold tracking-widest mb-3">
+        <p className="text-[#3d2b1f] text-sm font-bold tracking-widest mb-10">
           サロン紹介
-        </p>
-        <p className="text-xs text-[#8a7a60] mb-10">
-          「Pua」は花、「Bliss」は幸福・幸せ。花のようにやさしく、わんちゃんにも飼い主さまにも幸せな時間を。
         </p>
 
         {/* Interior photos */}
@@ -31,10 +28,10 @@ export default function About() {
         </div>
 
         {/* Concept text */}
-        <div className="mb-8">
-          {SALON_INFO.conceptText.split("\n").map((line, i) => (
-            <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-relaxed mb-2">
-              {line}
+        <div className="mb-8 text-left space-y-4">
+          {SALON_INFO.conceptText.split("\n\n").map((paragraph, i) => (
+            <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-loose">
+              {paragraph}
             </p>
           ))}
         </div>
