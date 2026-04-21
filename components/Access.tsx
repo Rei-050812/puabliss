@@ -4,7 +4,7 @@ const INFO_ROWS = [
   { label: "住所", value: `${SALON_INFO.zipCode} ${SALON_INFO.address}` },
   { label: "営業時間", value: SALON_INFO.hours },
   { label: "定休日", value: SALON_INFO.closedDay },
-  ...(SALON_INFO.tel ? [{ label: "電話番号", value: SALON_INFO.tel, isTel: true }] : []),
+  { label: "電話番号", value: SALON_INFO.tel || "未定", isTel: !!SALON_INFO.tel },
 ];
 
 export default function Access() {

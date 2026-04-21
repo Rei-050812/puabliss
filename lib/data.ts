@@ -3,6 +3,9 @@
 // Sanity連携時はここを CMS から取得する形に置き換える
 // ─────────────────────────────────────────────
 
+// デプロイ後、実際のドメインに変更してください
+export const SITE_URL = "https://puabliss.vercel.app";
+
 export const SALON_INFO = {
   name: "Pua Bliss",
   nameKana: "プアブリス",
