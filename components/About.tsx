@@ -46,11 +46,8 @@ export default function About() {
               </span>
             ))}」
           </p>
-          <p className="text-xs font-bold text-[#4d6b44] mb-1">
+          <p className="text-xs font-bold text-[#4d6b44]">
             {SALON_INFO.owner} / {SALON_INFO.ownerTitle}
-          </p>
-          <p className="text-xs text-[#8a7a60]">
-            ドッグショーへの参加などを通じて、日々技術の向上に努めています。
           </p>
         </div>
       </div>
