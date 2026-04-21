@@ -58,8 +58,27 @@ export default function Services() {
         </div>
 
         {/* 送迎 */}
-        <div className="text-left">
-          <p className="text-sm text-[#4d6b44] font-medium">🚗 {SALON_INFO.deliveryService}</p>
+        <div className="text-left flex items-center gap-2">
+          <svg width="28" height="20" viewBox="0 0 56 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+            {/* ボディ */}
+            <path d="M4 26 C3 26 2 25 2 24 L2 20 C2 19 3 18 4 18 L6 18 L10 10 C11 8 13 7 15 7 L36 7 C38 7 40 8 41 10 L45 18 L52 18 C53 19 54 19 54 21 L54 24 C54 25 53 26 52 26 Z" stroke="#4d6b44" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            {/* 窓 */}
+            <path d="M13 17 L17 10 C17.5 9 18.5 8.5 19.5 8.5 L32 8.5 C33 8.5 34 9 34.5 10 L38 17 Z" stroke="#4d6b44" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="#e8dcc8" fillOpacity="0.5"/>
+            {/* 窓の縦線 */}
+            <line x1="26" y1="9" x2="26" y2="17" stroke="#4d6b44" strokeWidth="1.2" strokeLinecap="round"/>
+            {/* 前タイヤ */}
+            <circle cx="42" cy="27" r="5.5" stroke="#4d6b44" strokeWidth="2" fill="#faf8f5"/>
+            <circle cx="42" cy="27" r="2" stroke="#4d6b44" strokeWidth="1.5" fill="#4d6b44"/>
+            {/* 後タイヤ */}
+            <circle cx="15" cy="27" r="5.5" stroke="#4d6b44" strokeWidth="2" fill="#faf8f5"/>
+            <circle cx="15" cy="27" r="2" stroke="#4d6b44" strokeWidth="1.5" fill="#4d6b44"/>
+            {/* ドアライン */}
+            <line x1="27" y1="18" x2="27" y2="26" stroke="#4d6b44" strokeWidth="1.2" strokeLinecap="round"/>
+            {/* ドアノブ */}
+            <circle cx="24" cy="22" r="1" fill="#4d6b44"/>
+            <circle cx="30" cy="22" r="1" fill="#4d6b44"/>
+          </svg>
+          <p className="text-sm text-[#4d6b44] font-medium">{SALON_INFO.deliveryService}</p>
         </div>
 
         {/* 注意書き */}
