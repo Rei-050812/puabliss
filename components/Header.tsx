@@ -42,7 +42,7 @@ export default function Header() {
             onClick={() => handleNavClick("#top")}
             className="flex items-center"
           >
-            <div className="relative h-12 w-44 flex-shrink-0">
+            <div className="relative h-14 w-56 flex-shrink-0">
               <Image
                 src={LOGO_IMAGE.src}
                 alt={LOGO_IMAGE.alt}
