@@ -27,12 +27,12 @@ export default function Hero() {
           <h1 className="text-white text-3xl md:text-4xl font-bold leading-relaxed mb-4">
             大切な家族に、
             <br />
-            花のようなやさしさを。
+            やさしいトリミングを。
           </h1>
           <p className="text-[#e8dcc8]/90 text-sm mb-8 leading-relaxed">
-            ナチュラルにこだわったトリミングで、
-            <br className="sm:hidden" />
-            わんちゃんの美しさを引き出します。
+            はじめてでも安心して任せられるサロン。
+            <br />
+            その子のペースに寄り添う、やさしいケア。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

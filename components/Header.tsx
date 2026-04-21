@@ -62,14 +62,14 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-xs text-[#3d2b1f] hover:text-[#8aab8a] transition-colors tracking-wide"
+                className="text-xs text-[#3d2b1f] hover:text-[#4d6b44] transition-colors tracking-wide"
               >
                 {item.label}
               </button>
             ))}
             <a
               href={SALON_INFO.lineUrl}
-              className="bg-[#8aab8a] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#7a9b7a] transition-colors"
+              className="bg-[#4d6b44] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3d5b34] transition-colors"
             >
               LINEで予約
             </a>

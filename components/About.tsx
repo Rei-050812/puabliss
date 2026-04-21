@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-5 bg-[#faf8f5]">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="font-handwritten text-5xl md:text-6xl text-[#8aab8a] mb-1 leading-none">
+        <h2 className="font-handwritten text-5xl md:text-6xl text-[#4d6b44] mb-1 leading-none">
           About
         </h2>
         <p className="text-[#3d2b1f] text-sm font-bold tracking-widest mb-10">
@@ -37,7 +37,7 @@ export default function About() {
         </div>
 
         {/* Owner comment */}
-        <div className="border-l-4 border-[#8aab8a] pl-4 py-2 bg-[#f5f0e8] rounded-r-xl">
+        <div className="border-l-4 border-[#4d6b44] pl-4 py-2 bg-[#f5f0e8] rounded-r-xl">
           <p className="text-sm text-[#5a4a3a] leading-relaxed mb-3 italic">
             「{SALON_INFO.ownerComment.split("\n").map((line, i, arr) => (
               <span key={i}>
@@ -46,7 +46,7 @@ export default function About() {
               </span>
             ))}」
           </p>
-          <p className="text-xs font-bold text-[#8aab8a]">
+          <p className="text-xs font-bold text-[#4d6b44]">
             {SALON_INFO.owner} / {SALON_INFO.ownerTitle}
           </p>
         </div>
