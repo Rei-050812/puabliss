@@ -57,9 +57,13 @@ export default function Services() {
           </div>
         </div>
 
-        {/* 送迎・注意書き */}
-        <div className="text-left space-y-1">
-          <p className="text-xs text-[#5a4a3a]">🚗 {SALON_INFO.deliveryService}</p>
+        {/* 送迎 */}
+        <div className="text-left">
+          <p className="text-sm text-[#4d6b44] font-medium">🚗 {SALON_INFO.deliveryService}</p>
+        </div>
+
+        {/* 注意書き */}
+        <div className="text-left mt-6 pt-4 border-t border-[#e0d4c0]">
           <p className="text-xs text-[#8a7a60]">{SERVICE_NOTE}</p>
         </div>
       </div>

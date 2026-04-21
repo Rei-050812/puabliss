@@ -18,17 +18,10 @@ export default function Access() {
           地図案内
         </p>
 
-        {/* Google Maps embed placeholder */}
-        <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-8 bg-[#e0d8cc] border-2 border-dashed border-[#b8a890] flex items-center justify-center">
-          {/* 本番環境では以下のiframeを実際のGoogle Maps埋め込みコードに差し替えてください */}
-          <div className="text-center">
-            <p className="text-2xl mb-2">🗺️</p>
-            <p className="text-sm text-[#8a7a60] font-medium">Googleマップ埋め込みエリア</p>
-            <p className="text-xs text-[#8a7a60] mt-1">住所確定後にiframeを設置</p>
-          </div>
-          {/* 差し替え用 iframe（住所確定後にコメントを外す）
+        {/* Google Maps embed */}
+        <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-8">
           <iframe
-            src="https://www.google.com/maps/embed?pb=..."
+            src="https://maps.google.com/maps?q=千葉県長生郡長生村信友1880-1&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -38,7 +31,6 @@ export default function Access() {
             title="Pua Bliss アクセスマップ"
             className="absolute inset-0"
           />
-          */}
         </div>
 
         {/* Info rows */}
