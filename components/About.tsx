@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         {/* Concept text */}
-        <div className="mb-8 text-left space-y-4">
+        <div className="mb-8 space-y-4">
           {SALON_INFO.conceptText.split("\n\n").map((paragraph, i) => (
             <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-loose">
               {paragraph}
@@ -46,8 +46,11 @@ export default function About() {
               </span>
             ))}」
           </p>
-          <p className="text-xs font-bold text-[#4d6b44]">
+          <p className="text-xs font-bold text-[#4d6b44] mb-1">
             {SALON_INFO.owner} / {SALON_INFO.ownerTitle}
+          </p>
+          <p className="text-xs text-[#8a7a60]">
+            ドッグショーへの参加などを通じて、日々技術の向上に努めています。
           </p>
         </div>
       </div>
