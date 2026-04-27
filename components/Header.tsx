@@ -47,7 +47,7 @@ export default function Header() {
                 src={LOGO_IMAGE.src}
                 alt={LOGO_IMAGE.alt}
                 fill
-                className="object-contain object-left"
+                className="object-contain object-left mix-blend-multiply"
                 sizes="144px"
               />
             </div>
