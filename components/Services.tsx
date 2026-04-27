@@ -40,7 +40,7 @@ export default function Services() {
                 <h3 className="text-sm font-bold text-white">
                   {service.name}
                 </h3>
-                <p className="text-xs text-white/80 mt-0.5">{service.description}</p>
+                {service.description && <p className="text-xs text-white/80 mt-0.5">{service.description}</p>}
               </div>
               {/* 犬種別料金 - 白 */}
               <div className="divide-y divide-[#f0ece8] bg-white">

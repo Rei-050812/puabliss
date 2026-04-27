@@ -37,7 +37,7 @@ export const SERVICES = [
   {
     id: "shampoo",
     name: "シャンプーコース",
-    description: "爪切り・耳掃除・肛門腺・足裏バリカン込み",
+    description: "",
     prices: [
       { breed: "チワワ", price: "¥3,700〜" },
       { breed: "ダックス", price: "¥4,000〜" },
@@ -51,7 +51,7 @@ export const SERVICES = [
   {
     id: "cut",
     name: "シャンプー・カットコース",
-    description: "シャンプー＋全身カット",
+    description: "",
     prices: [
       { breed: "チワワ", price: "¥5,700〜" },
       { breed: "ダックス", price: "¥6,000〜" },
