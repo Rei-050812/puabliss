@@ -36,30 +36,8 @@ export default function Header() {
         } border-b border-[#3d5534]`}
       >
         <div className="max-w-5xl mx-auto px-5 h-16 grid grid-cols-3 items-center">
-          {/* Left: hamburger (mobile) / empty (desktop) */}
-          <div className="flex items-center">
-            <button
-              className="md:hidden flex flex-col gap-[5px] p-2"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="メニュー"
-            >
-              <span
-                className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${
-                  isOpen ? "rotate-45 translate-y-[7px]" : ""
-                }`}
-              />
-              <span
-                className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${
-                  isOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${
-                  isOpen ? "-rotate-45 -translate-y-[7px]" : ""
-                }`}
-              />
-            </button>
-          </div>
+          {/* Left: empty */}
+          <div />
 
           {/* Center: Logo */}
           <div className="flex justify-center">
@@ -80,8 +58,8 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Right: Desktop nav */}
-          <div className="flex justify-end">
+          {/* Right: Desktop nav / hamburger (mobile) */}
+          <div className="flex justify-end items-center">
             <nav className="hidden md:flex items-center gap-7">
               {NAV_ITEMS.map((item) => (
                 <button
@@ -99,6 +77,15 @@ export default function Header() {
                 LINEで予約
               </a>
             </nav>
+            <button
+              className="md:hidden flex flex-col gap-[5px] p-2"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="メニュー"
+            >
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+            </button>
           </div>
         </div>
       </header>
