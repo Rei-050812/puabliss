@@ -35,56 +35,55 @@ export default function Header() {
           scrolled ? "bg-[#4b6345] shadow-sm" : "bg-[#4b6345]"
         } border-b border-[#3d5534]`}
       >
-        <div className="max-w-5xl mx-auto px-5 h-16 grid grid-cols-[1fr_auto_1fr] items-center">
-          {/* Left: empty */}
-          <div />
-
-          {/* Center: Logo */}
-          <a
-            href="#top"
-            onClick={() => handleNavClick("#top")}
-            className="flex items-center justify-center"
-          >
-            <div className="relative h-14 w-44 flex-shrink-0">
-              <Image
-                src={LOGO_IMAGE.src}
-                alt={LOGO_IMAGE.alt}
-                fill
-                className="object-contain"
-                sizes="176px"
-              />
-            </div>
-          </a>
-
-          {/* Right: Desktop nav / hamburger (mobile) */}
-          <div className="flex items-center justify-end gap-5">
-            <nav className="hidden md:flex items-center gap-5">
-              {NAV_ITEMS.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item.href)}
-                  className="text-xs text-white hover:text-white/70 transition-colors tracking-wide whitespace-nowrap"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <a
-                href={SALON_INFO.lineUrl}
-                className="bg-white text-[#4b6345] text-xs font-bold px-4 py-2 rounded-full hover:bg-white/80 transition-colors whitespace-nowrap"
-              >
-                LINEで予約
-              </a>
-            </nav>
-            <button
-              className="md:hidden flex flex-col gap-[5px] p-2"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="メニュー"
+        <div className="w-full px-8 h-16 relative flex items-center">
+          {/* Logo — absolute center of full header width */}
+          <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none">
+            <a
+              href="#top"
+              onClick={() => handleNavClick("#top")}
+              className="pointer-events-auto flex items-center"
             >
-              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
-              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
-              <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
-            </button>
+              <div className="relative h-14 w-44">
+                <Image
+                  src={LOGO_IMAGE.src}
+                  alt={LOGO_IMAGE.alt}
+                  fill
+                  className="object-contain"
+                  sizes="176px"
+                />
+              </div>
+            </a>
           </div>
+
+          {/* Desktop nav — right edge */}
+          <nav className="ml-auto relative z-10 hidden md:flex items-center gap-6">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => handleNavClick(item.href)}
+                className="text-xs text-white hover:text-white/70 transition-colors tracking-wide whitespace-nowrap"
+              >
+                {item.label}
+              </button>
+            ))}
+            <a
+              href={SALON_INFO.lineUrl}
+              className="bg-white text-[#4b6345] text-xs font-bold px-4 py-2 rounded-full hover:bg-white/80 transition-colors whitespace-nowrap"
+            >
+              LINEで予約
+            </a>
+          </nav>
+
+          {/* Hamburger (mobile) */}
+          <button
+            className="ml-auto relative z-10 md:hidden flex flex-col gap-[5px] p-2"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="メニュー"
+          >
+            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-white rounded transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+          </button>
         </div>
       </header>
 
