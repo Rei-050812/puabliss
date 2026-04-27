@@ -16,7 +16,7 @@ export default function Services() {
           {SERVICES.map((service) => (
             <div
               key={service.id}
-              className="rounded-2xl overflow-hidden"
+              className="overflow-hidden"
             >
               {/* コース名 - グレー */}
               <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#8a8a8a]">
@@ -39,7 +39,7 @@ export default function Services() {
         </div>
 
         {/* オプション */}
-        <div className="rounded-2xl overflow-hidden mb-6">
+        <div className="overflow-hidden mb-6">
           <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#8a8a8a]">
             <h3 className="text-sm font-bold text-white">
               オプションメニュー
