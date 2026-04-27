@@ -43,6 +43,7 @@ export const SERVICES = [
       { breed: "ダックス", price: "¥4,000〜" },
       { breed: "プードル", price: "¥5,800〜" },
       { breed: "シュナウザー", price: "¥5,600〜" },
+      { breed: "柴犬", price: "¥6,700〜" },
       { breed: "フレブル", price: "¥5,000〜" },
       { breed: "ラブラドール", price: "¥9,000〜" },
     ],

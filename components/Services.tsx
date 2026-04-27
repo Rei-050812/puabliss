@@ -8,7 +8,7 @@ export default function Services() {
           Service
         </h2>
         <p className="text-white/80 text-sm font-bold tracking-widest mb-10">
-          サービス紹介
+          サービス
         </p>
 
         {/* 料金テーブル */}
