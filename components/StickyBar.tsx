@@ -4,7 +4,7 @@ import { SALON_INFO } from "@/lib/data";
 
 export default function StickyBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#4d6b44] px-5 py-3 flex items-center justify-between shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#4b6345] px-5 py-3 flex items-center justify-between shadow-2xl">
       <div className="flex items-center gap-2">
         <span className="text-xl">🐾</span>
         <span className="text-white text-xs font-bold">ご予約はLINEで</span>

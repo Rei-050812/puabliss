@@ -19,7 +19,7 @@ function CarIcon() {
 
 export default function Services() {
   return (
-    <section id="service" className="py-20 px-5 bg-[#4d6b44]">
+    <section id="service" className="py-20 px-5 bg-[#4b6345]">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-handwritten text-5xl md:text-6xl text-white mb-1 leading-none">
           Service
@@ -47,7 +47,7 @@ export default function Services() {
                 {service.prices.map((item) => (
                   <div key={item.breed} className="flex items-center justify-between px-5 py-3">
                     <span className="text-sm text-[#3d2b1f]">{item.breed}</span>
-                    <span className="text-sm font-bold text-[#4d6b44]">{item.price}</span>
+                    <span className="text-sm font-bold text-[#4b6345]">{item.price}</span>
                   </div>
                 ))}
               </div>
@@ -66,7 +66,7 @@ export default function Services() {
             {OPTIONS.map((option) => (
               <div key={option.name} className="flex items-center justify-between px-5 py-3">
                 <span className="text-sm text-[#3d2b1f]">{option.name}</span>
-                <span className="text-sm font-bold text-[#4d6b44]">{option.price}</span>
+                <span className="text-sm font-bold text-[#4b6345]">{option.price}</span>
               </div>
             ))}
           </div>

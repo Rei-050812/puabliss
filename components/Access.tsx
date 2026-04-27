@@ -11,7 +11,7 @@ export default function Access() {
   return (
     <section id="access" className="py-20 px-5 bg-[#e8dcc8]">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="font-handwritten text-5xl md:text-6xl text-[#4d6b44] mb-1 leading-none">
+        <h2 className="font-handwritten text-5xl md:text-6xl text-[#4b6345] mb-1 leading-none">
           Access
         </h2>
         <p className="text-[#3d2b1f] text-sm font-bold tracking-widest mb-10">
@@ -42,13 +42,13 @@ export default function Access() {
                 i < INFO_ROWS.length - 1 ? "border-b border-[#e8dcc8]" : ""
               }`}
             >
-              <span className="text-xs font-bold text-[#4d6b44] min-w-[5rem] pt-0.5">
+              <span className="text-xs font-bold text-[#4b6345] min-w-[5rem] pt-0.5">
                 {row.label}
               </span>
               {row.isTel ? (
                 <a
                   href={`tel:${row.value}`}
-                  className="text-sm text-[#5a4a3a] hover:text-[#4d6b44] transition-colors"
+                  className="text-sm text-[#5a4a3a] hover:text-[#4b6345] transition-colors"
                 >
                   {row.value}
                 </a>
