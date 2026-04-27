@@ -66,7 +66,7 @@ export default function Header() {
             ))}
             <a
               href={SALON_INFO.lineUrl}
-              className="bg-[#4b6345] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3d5b34] transition-colors border border-[#4b6345]"
+              className="bg-white text-[#4b6345] text-xs font-bold px-4 py-2 rounded-full hover:bg-white/80 transition-colors"
             >
               LINEで予約
             </a>
