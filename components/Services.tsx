@@ -36,7 +36,7 @@ export default function Services() {
               className="overflow-hidden"
             >
               {/* コース名 - グレー */}
-              <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#8a8a8a]">
+              <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#b0b0b0]">
                 <h3 className="text-sm font-bold text-white">
                   {service.name}
                 </h3>
@@ -57,7 +57,7 @@ export default function Services() {
 
         {/* オプション */}
         <div className="overflow-hidden mb-6">
-          <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#8a8a8a]">
+          <div className="px-5 py-4 border-b border-[#d0ccc8] bg-[#b0b0b0]">
             <h3 className="text-sm font-bold text-white">
               オプションメニュー
             </h3>
