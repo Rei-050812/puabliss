@@ -27,6 +27,18 @@ export default function About() {
           ))}
         </div>
 
+        {/* サロン名の由来 */}
+        <div className="mb-8 space-y-4">
+          <p className="text-sm md:text-base text-[#5a4a3a] font-medium">
+            {SALON_INFO.nameIntro}
+          </p>
+          {SALON_INFO.nameStory.split("\n\n").map((paragraph, i) => (
+            <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-loose">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+
         {/* Concept text */}
         <div className="mb-8 space-y-4">
           {SALON_INFO.conceptText.split("\n\n").map((paragraph, i) => (
