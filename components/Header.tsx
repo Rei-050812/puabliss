@@ -35,7 +35,7 @@ export default function Header() {
           scrolled ? "bg-[#4b6345] shadow-sm" : "bg-[#4b6345]"
         } border-b border-[#3d5534]`}
       >
-        <div className="max-w-5xl mx-auto px-5 h-16 relative flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-5 h-16 relative flex items-center">
           {/* Logo — absolute center */}
           <div className="absolute left-1/2 -translate-x-1/2 z-0 pointer-events-none">
             <a
@@ -55,11 +55,8 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Left spacer (keeps logo visually centered) */}
-          <div className="w-44 flex-shrink-0" />
-
-          {/* Right: Desktop nav / hamburger (mobile) */}
-          <div className="flex items-center relative z-10">
+          {/* Right: Desktop nav / hamburger (mobile) — ml-auto pushes to right edge */}
+          <div className="ml-auto flex items-center relative z-10">
             <nav className="hidden md:flex items-center gap-6">
               {NAV_ITEMS.map((item) => (
                 <button
