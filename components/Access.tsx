@@ -9,7 +9,7 @@ const INFO_ROWS = [
 
 export default function Access() {
   return (
-    <section id="access" className="py-20 px-5 bg-[#e8dcc8]">
+    <section id="access" className="py-20 px-5 bg-[#ddd0b8]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-handwritten text-5xl md:text-6xl text-[#4b6345] mb-1 leading-none">
           Access
@@ -39,7 +39,7 @@ export default function Access() {
             <div
               key={row.label}
               className={`flex items-start gap-4 px-5 py-4 ${
-                i < INFO_ROWS.length - 1 ? "border-b border-[#e8dcc8]" : ""
+                i < INFO_ROWS.length - 1 ? "border-b border-[#ddd0b8]" : ""
               }`}
             >
               <span className="text-xs font-bold text-[#4b6345] min-w-[5rem] pt-0.5">

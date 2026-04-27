@@ -105,7 +105,7 @@ export default function Header() {
         />
         {/* Drawer */}
         <nav
-          className={`absolute top-16 left-0 right-0 bg-[#faf8f5] border-b border-[#e8dcc8] transition-transform duration-300 ${
+          className={`absolute top-16 left-0 right-0 bg-[#faf8f5] border-b border-[#ddd0b8] transition-transform duration-300 ${
             isOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
@@ -113,7 +113,7 @@ export default function Header() {
             <button
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="block w-full text-left px-6 py-4 text-sm text-[#3d2b1f] border-b border-[#e8dcc8] hover:bg-[#f5f0e8] transition-colors"
+              className="block w-full text-left px-6 py-4 text-sm text-[#3d2b1f] border-b border-[#ddd0b8] hover:bg-[#f5f0e8] transition-colors"
             >
               {item.label}
             </button>

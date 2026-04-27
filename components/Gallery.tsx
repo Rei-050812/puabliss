@@ -3,7 +3,7 @@ import { GALLERY_IMAGES, SALON_INFO } from "@/lib/data";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-20 px-5 bg-[#e8dcc8]">
+    <section id="gallery" className="py-20 px-5 bg-[#ddd0b8]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-handwritten text-5xl md:text-6xl text-[#4b6345] mb-1 leading-none">
           Gallery
