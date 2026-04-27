@@ -54,7 +54,7 @@ export default function About() {
 
         {/* Owner comment — 楕円形 */}
         <div className="flex flex-col items-center">
-          <div className="bg-[#638a54] rounded-[50%] px-10 py-12 w-72 md:w-96 flex flex-col items-center justify-center text-center">
+          <div className="bg-[#1e2d18] rounded-[50%] px-10 py-12 w-72 md:w-96 flex flex-col items-center justify-center text-center">
             <p className="text-sm text-white leading-relaxed italic mb-5">
               「{SALON_INFO.ownerComment.split("\n").map((line, i, arr) => (
                 <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
