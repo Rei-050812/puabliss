@@ -35,16 +35,13 @@ export default function Header() {
           scrolled ? "bg-[#4b6345] shadow-sm" : "bg-[#4b6345]"
         } border-b border-[#3d5534]`}
       >
-        <div className="max-w-5xl mx-auto px-5 h-16 grid grid-cols-3 items-center">
-          {/* Left: empty */}
-          <div />
-
-          {/* Center: Logo */}
-          <div className="flex justify-center">
+        <div className="max-w-5xl mx-auto px-5 h-16 relative flex items-center justify-between">
+          {/* Logo — absolute center */}
+          <div className="absolute left-1/2 -translate-x-1/2 z-0 pointer-events-none">
             <a
               href="#top"
               onClick={() => handleNavClick("#top")}
-              className="flex items-center"
+              className="flex items-center pointer-events-auto"
             >
               <div className="relative h-14 w-44 flex-shrink-0">
                 <Image
@@ -58,21 +55,24 @@ export default function Header() {
             </a>
           </div>
 
+          {/* Left spacer (keeps logo visually centered) */}
+          <div className="w-44 flex-shrink-0" />
+
           {/* Right: Desktop nav / hamburger (mobile) */}
-          <div className="flex justify-end items-center">
-            <nav className="hidden md:flex items-center gap-7">
+          <div className="flex items-center relative z-10">
+            <nav className="hidden md:flex items-center gap-6">
               {NAV_ITEMS.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-xs text-white hover:text-white/70 transition-colors tracking-wide"
+                  className="text-xs text-white hover:text-white/70 transition-colors tracking-wide whitespace-nowrap"
                 >
                   {item.label}
                 </button>
               ))}
               <a
                 href={SALON_INFO.lineUrl}
-                className="bg-white text-[#4b6345] text-xs font-bold px-4 py-2 rounded-full hover:bg-white/80 transition-colors"
+                className="bg-white text-[#4b6345] text-xs font-bold px-4 py-2 rounded-full hover:bg-white/80 transition-colors whitespace-nowrap"
               >
                 LINEで予約
               </a>
