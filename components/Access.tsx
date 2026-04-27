@@ -9,7 +9,7 @@ const INFO_ROWS = [
 
 export default function Access() {
   return (
-    <section id="access" className="py-20 px-5 bg-[#f5f0e8]">
+    <section id="access" className="py-20 px-5 bg-[#e8dcc8]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="font-handwritten text-5xl md:text-6xl text-[#4d6b44] mb-1 leading-none">
           Access
