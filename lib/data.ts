@@ -100,6 +100,6 @@ export const HERO_IMAGE = {
 };
 
 export const LOGO_IMAGE = {
-  src: "/images/logo.png",
+  src: "/logo.png",
   alt: "Pua Bliss ロゴ",
 };
