@@ -32,12 +32,13 @@
 
 ## カラー
 
-| 名称 | カラーコード |
+| 名称 | 値 |
 |---|---|
-| メインカラー（グリーン） | `#4d6b44` |
-| ベージュ | `#e8dcc8` |
+| メインカラー（グリーン） | `texture-green.jpeg`（ヘッダー・サービスセクション背景） |
+| ベージュ | `texture-beige.jpg`（About・Gallery・Accessセクション背景） |
 | オフホワイト | `#faf8f5` |
-| ダークブラウン（テキスト） | `#3d2b1f` |
+| ダークテキスト | `#525041` |
+| アクセント（ベース） | `#1e5c35` |
 
 ## セットアップ
 
@@ -71,13 +72,15 @@ lib/data.ts
 
 | ファイル名 | 用途 |
 |---|---|
-| `hero.png` | ヒーロービジュアル（店舗外観） |
-| `logo.png` | ヘッダーロゴ（犬イラスト＋Pua Bliss文字） |
-| `logo.svg` | ファビコン（花のアイコン） |
-| `interior-01.png` | 内装①（サロン内観） |
-| `interior-02.png` | 内装②（トリミング台） |
-| `interior-03.png` | 内装③（ドッグラン） |
-| `gallery-01.png` ～ `gallery-06.png` | ギャラリー施術写真 |
+| `logo.png` | ヘッダーロゴ（犬イラスト＋Pua Bliss文字・透過PNG） |
+| `texture-green.jpeg` | グリーンスエードテクスチャ（ヘッダー・サービスセクション背景） |
+| `texture-beige.jpg` | ベージュテクスチャ（About・Gallery・Accessセクション背景） |
+| `images/hero.png` | ヒーロービジュアル（店舗外観） |
+| `images/logo.svg` | ファビコン（花のアイコン） |
+| `images/interior-01.png` | 内装①（サロン内観） |
+| `images/interior-02.png` | 内装②（トリミング台） |
+| `images/interior-03.png` | 内装③（ドッグラン） |
+| `images/gallery-01.png` ～ `gallery-06.png` | ギャラリー施術写真 |
 
 ## SEO 設定
 
@@ -128,6 +131,9 @@ puabliss/
 │   └── data.ts           # コンテンツデータ定義（CMS連携時に置き換え）
 └── public/
     ├── images/           # 画像ファイル
+    ├── logo.png          # ヘッダーロゴ（透過PNG）
+    ├── texture-green.jpeg # グリーンテクスチャ背景
+    ├── texture-beige.jpg  # ベージュテクスチャ背景
     ├── robots.txt        # クローラー設定
     └── sitemap.xml       # サイトマップ
 ```
