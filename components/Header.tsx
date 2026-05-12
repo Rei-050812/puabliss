@@ -35,7 +35,7 @@ export default function Header() {
           scrolled ? "shadow-sm" : ""
         } border-b border-[#164a27]`}
       >
-        <div className="w-full px-8 h-16 relative flex items-center">
+        <div className="w-full px-8 h-20 relative flex items-center">
           {/* Logo — absolute center of full header width */}
           <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none">
             <a
@@ -43,7 +43,7 @@ export default function Header() {
               onClick={() => handleNavClick("#top")}
               className="pointer-events-auto flex items-center"
             >
-              <div className="relative h-14 w-44">
+              <div className="relative h-18 w-52">
                 <Image
                   src={LOGO_IMAGE.src}
                   alt={LOGO_IMAGE.alt}
@@ -102,7 +102,7 @@ export default function Header() {
         />
         {/* Drawer */}
         <nav
-          className={`absolute top-16 left-0 right-0 bg-[#faf8f5] border-b border-[#ddd0b8] transition-transform duration-300 ${
+          className={`absolute top-20 left-0 right-0 bg-[#faf8f5] border-b border-[#ddd0b8] transition-transform duration-300 ${
             isOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
