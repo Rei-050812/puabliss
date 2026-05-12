@@ -29,14 +29,22 @@ export default function About() {
 
         {/* サロン名の由来 */}
         <div className="mb-8 space-y-4">
-          <p className="text-sm md:text-base text-[#5a4a3a] font-medium">
-            {SALON_INFO.nameIntro}
+          <p className="text-sm md:text-base text-[#525041] font-medium">
+            サロン名には<br className="md:hidden" />わんちゃんと飼い主さまへの想いを込めています。
           </p>
           {SALON_INFO.nameStory.split("\n\n").map((paragraph, i) => (
-            <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-loose">
-              {paragraph.split("\n").map((line, j, arr) => (
-                <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
-              ))}
+            <p key={i} className="text-sm md:text-base text-[#525041] leading-loose">
+              {i === 0 ? (
+                <>
+                  「Pua Bliss（プアブリス）」の&quot;Pua&quot;は「花」
+                  <br className="md:hidden" />
+                  &quot;Bliss&quot;は「幸福・幸せ」を意味します。
+                </>
+              ) : (
+                paragraph.split("\n").map((line, j, arr) => (
+                  <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
+                ))
+              )}
             </p>
           ))}
         </div>
@@ -44,7 +52,7 @@ export default function About() {
         {/* Concept text */}
         <div className="mb-10 space-y-4">
           {SALON_INFO.conceptText.split("\n\n").map((paragraph, i) => (
-            <p key={i} className="text-sm md:text-base text-[#5a4a3a] leading-loose">
+            <p key={i} className="text-sm md:text-base text-[#525041] leading-loose">
               {paragraph.split("\n").map((line, j, arr) => (
                 <span key={j}>{line}{j < arr.length - 1 && <br />}</span>
               ))}
