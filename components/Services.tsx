@@ -19,7 +19,7 @@ function CarIcon() {
 
 export default function Services() {
   return (
-    <section id="service" className="py-20 px-5 bg-[#4b6345]">
+    <section id="service" className="py-20 px-5 texture-green-tile">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-handwritten text-5xl md:text-6xl text-white mb-1 leading-none">
           Service

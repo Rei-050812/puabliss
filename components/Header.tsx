@@ -31,9 +31,9 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-[#4b6345] shadow-sm" : "bg-[#4b6345]"
-        } border-b border-[#3d5534]`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 texture-green-cover ${
+          scrolled ? "shadow-sm" : ""
+        } border-b border-[#164a27]`}
       >
         <div className="w-full px-8 h-16 relative flex items-center">
           {/* Logo — absolute center of full header width */}

@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 :root {
-  --color-green: #4b6345;
+  --color-green: #1e5c35;
   --color-beige: #ddd0b8;
   --color-offwhite: #faf8f5;
   --color-dark-brown: #3d2b1f;
@@ -28,4 +28,24 @@ h1, h2 {
 .font-handwritten {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
+}
+
+.texture-green-cover {
+  background-image: url('/texture-green.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.texture-green-tile {
+  background-image: url('/texture-green.jpeg');
+  background-size: 300px 300px;
+  background-repeat: repeat;
+}
+
+.texture-beige {
+  background-image: url('/texture-beige.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
