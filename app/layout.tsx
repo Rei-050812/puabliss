@@ -1,7 +1,26 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Dancing_Script, Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import { SALON_INFO, SITE_URL } from "@/lib/data";
+
+const dancingScript = Dancing_Script({
+  weight: "700",
+  subsets: ["latin"],
+  variable: "--font-dancing-script",
+});
+
+const notoSerifJP = Noto_Serif_JP({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-noto-serif-jp",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+});
 
 const OG_IMAGE = `${SITE_URL}/images/hero.png`;
 
@@ -90,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={`${dancingScript.variable} ${notoSerifJP.variable} ${notoSansJP.variable}`}>
       <body>
         {children}
         <Script

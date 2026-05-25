@@ -26,6 +26,7 @@ export default function Access() {
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
+            sandbox="allow-scripts allow-same-origin allow-popups"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Pua Bliss アクセスマップ"

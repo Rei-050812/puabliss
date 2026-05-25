@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────
 
 // デプロイ後、実際のドメインに変更してください
-export const SITE_URL = "https://puabliss.vercel.app";
+export const SITE_URL = "https://puabliss.jp";
 
 export const SALON_INFO = {
   name: "Pua Bliss",
