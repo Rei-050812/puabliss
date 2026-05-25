@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://puabliss.vercel.app/sitemap.xml
+Sitemap: https://puabliss.jp/sitemap.xml

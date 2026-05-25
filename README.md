@@ -24,9 +24,11 @@
 
 ## フォント
 
+`next/font/google` でビルド時にバンドルされます（外部CDN不要）。
+
 | 用途 | フォント |
 |---|---|
-| セクションタイトル | Dancing Script Bold（Google Fonts） |
+| セクションタイトル | Dancing Script Bold |
 | 日本語見出し（h1/h2） | Noto Serif JP |
 | 本文・UI全般 | Noto Sans JP |
 
@@ -101,21 +103,18 @@ lib/data.ts
 
 ### デプロイ後の対応
 
-1. `lib/data.ts` の `SITE_URL` を実際のドメインに変更
-2. `public/robots.txt` と `public/sitemap.xml` のURLも同様に更新
-3. Google Search Console にサイトを登録してサイトマップを送信
+1. Google Search Console にサイトを登録してサイトマップを送信
 
 ## 未対応（確定後に更新）
 
 - [ ] 電話番号（確定後 `SALON_INFO.tel` に入力）
-- [ ] Vercel 本番URL or カスタムドメイン → `SITE_URL` に設定
 
 ## ディレクトリ構成
 
 ```
 puabliss/
 ├── app/
-│   ├── globals.css       # グローバルスタイル・Tailwind・Googleフォント
+│   ├── globals.css       # グローバルスタイル・Tailwind
 │   ├── layout.tsx        # ルートレイアウト・SEOメタデータ・JSON-LD
 │   └── page.tsx          # メインページ（全セクション結合）
 ├── components/
@@ -129,6 +128,7 @@ puabliss/
 │   └── Footer.tsx        # フッター
 ├── lib/
 │   └── data.ts           # コンテンツデータ定義（CMS連携時に置き換え）
+├── vercel.json           # Vercel セキュリティヘッダー設定
 └── public/
     ├── images/           # 画像ファイル
     ├── logo.png          # ヘッダーロゴ（透過PNG）
