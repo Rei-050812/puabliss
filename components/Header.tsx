@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 texture-green-cover ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 texture-green-tile ${
           scrolled ? "shadow-sm" : ""
         } border-b border-[#164a27]`}
       >
