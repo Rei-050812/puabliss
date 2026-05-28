@@ -22,7 +22,7 @@ const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
 });
 
-const OG_IMAGE = `${SITE_URL}/images/hero.png`;
+const OG_IMAGE = `${SITE_URL}/images/og-image.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
