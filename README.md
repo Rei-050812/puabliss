@@ -78,6 +78,7 @@ lib/data.ts
 | `texture-green.jpeg` | グリーンスエードテクスチャ（ヘッダー・サービスセクション背景） |
 | `texture-beige.jpg` | ベージュテクスチャ（About・Gallery・Accessセクション背景） |
 | `images/hero.png` | ヒーロービジュアル（店舗外観） |
+| `images/og-image.png` | OGP画像（SNSシェア時のサムネイル・1200×630px） |
 | `images/logo.svg` | ファビコン（花のアイコン） |
 | `images/interior-01.png` | 内装①（サロン内観） |
 | `images/interior-02.png` | 内装②（トリミング台） |
@@ -93,7 +94,7 @@ lib/data.ts
 | `<title>` | Pua Bliss｜千葉・長生村のナチュラルトリミングサロン |
 | `description` | 地名・特徴・送迎を含む検索向け説明文 |
 | `keywords` | トリミング・長生村・千葉・犬 など |
-| OGP（og:） | SNSシェア時にヒーロー画像・タイトル・説明を表示 |
+| OGP（og:） | SNSシェア時に og-image.png・タイトル・説明を表示 |
 | Twitter Card | `summary_large_image`（大きな画像カード） |
 | JSON-LD | LocalBusiness 構造化データ（Googleが店舗情報として認識） |
 | robots | index・follow（全クローラー許可） |
