@@ -17,7 +17,7 @@ export const SALON_INFO = {
   zipCode: "〒299-4331",
   hours: "9:00〜18:00",
   closedDay: "不定休",
-  tel: "",
+  tel: "070-4359-1547",
   lineUrl: "https://lin.ee/zPe7CLp",
   instagramUrl: "https://www.instagram.com/pua_bliss/",
   instagramHandle: "@pua_bliss",

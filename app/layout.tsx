@@ -87,6 +87,7 @@ const jsonLd = {
     "千葉県長生村のドッグトリミングサロン。はじめての子も、苦手な子も大歓迎。その子のペースに寄り添う、やさしいトリミングをお届けします。",
   url: SITE_URL,
   image: OG_IMAGE,
+  telephone: SALON_INFO.tel,
   address: {
     "@type": "PostalAddress",
     postalCode: "299-4331",

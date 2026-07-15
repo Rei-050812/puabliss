@@ -108,10 +108,6 @@ lib/data.ts
 
 1. Google Search Console にサイトを登録してサイトマップを送信
 
-## 未対応（確定後に更新）
-
-- [ ] 電話番号（確定後 `SALON_INFO.tel` に入力）
-
 ## ディレクトリ構成
 
 ```

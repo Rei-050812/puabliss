@@ -41,7 +41,7 @@ export default function Contact() {
             className="flex items-center justify-center gap-2 text-[#c4a882] text-sm py-2 hover:text-white transition-colors"
           >
             <PhoneIcon />
-            {SALON_INFO.tel}（確定後に反映）
+            {SALON_INFO.tel}
           </a>
         </div>
       </div>
