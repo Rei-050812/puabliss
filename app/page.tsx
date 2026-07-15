@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import Access from "@/components/Access";
+import Registration from "@/components/Registration";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Gallery />
         <Access />
+        <Registration />
         <Contact />
       </main>
       <Footer />

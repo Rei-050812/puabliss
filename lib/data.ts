@@ -102,3 +102,20 @@ export const LOGO_IMAGE = {
   src: "/logo.png",
   alt: "Pua Bliss ロゴ",
 };
+
+// ─────────────────────────────────────────────
+// 第一種動物取扱業登録（法定表示事項）
+// ─────────────────────────────────────────────
+export const ANIMAL_HANDLER_REGISTRATION = {
+  title: "第一種動物取扱業登録",
+  rows: [
+    { label: "氏名または名称", value: "田邉 凜々花" },
+    { label: "事業所の名称", value: "Pua Bliss" },
+    { label: "事業所の所在地", value: "千葉県長生郡長生村信友1880-1" },
+    { label: "動物取扱業の種別", value: "保管" },
+    { label: "登録番号", value: "26-長健福471-2" },
+    { label: "登録年月日", value: "令和8年7月8日" },
+    { label: "登録の有効期間の末日", value: "令和13年7月7日" },
+    { label: "動物取扱責任者の氏名", value: "田邉 凜々花" },
+  ],
+};

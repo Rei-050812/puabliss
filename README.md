@@ -19,6 +19,7 @@
 | Service | コース別料金（犬種別）・オプション |
 | Gallery | 施術後ギャラリー（3カラムグリッド） |
 | Access | Googleマップ・店舗情報 |
+| Registration | 第一種動物取扱業登録（法定表示事項） |
 | Contact | LINE・Instagram・電話 CTA |
 | Footer | コピーライト |
 
@@ -37,7 +38,7 @@
 | 名称 | 値 |
 |---|---|
 | メインカラー（グリーン） | `texture-green.jpeg`（ヘッダー・サービスセクション背景） |
-| ベージュ | `texture-beige.jpg`（About・Gallery・Accessセクション背景） |
+| ベージュ | `texture-beige.jpg`（About・Gallery・Access・Registrationセクション背景） |
 | オフホワイト | `#faf8f5` |
 | ダークテキスト | `#525041` |
 | アクセント（ベース） | `#1e5c35` |
@@ -65,7 +66,8 @@ lib/data.ts
 ├── GALLERY_IMAGES  # ギャラリー画像パス
 ├── INTERIOR_IMAGES # 内装画像パス
 ├── HERO_IMAGE      # ヒーロー画像パス
-└── LOGO_IMAGE      # ロゴ画像パス
+├── LOGO_IMAGE      # ロゴ画像パス
+└── ANIMAL_HANDLER_REGISTRATION # 第一種動物取扱業登録（法定表示事項）
 ```
 
 ## 画像の差し替え
@@ -76,7 +78,7 @@ lib/data.ts
 |---|---|
 | `logo.png` | ヘッダーロゴ（犬イラスト＋Pua Bliss文字・透過PNG） |
 | `texture-green.jpeg` | グリーンスエードテクスチャ（ヘッダー・サービスセクション背景） |
-| `texture-beige.jpg` | ベージュテクスチャ（About・Gallery・Accessセクション背景） |
+| `texture-beige.jpg` | ベージュテクスチャ（About・Gallery・Access・Registrationセクション背景） |
 | `images/hero.png` | ヒーロービジュアル（店舗外観） |
 | `images/og-image.png` | OGP画像（SNSシェア時のサムネイル・1200×630px） |
 | `images/logo.svg` | ファビコン（花のアイコン） |
@@ -125,6 +127,7 @@ puabliss/
 │   ├── Services.tsx      # サービス料金（犬種別テーブル）
 │   ├── Gallery.tsx       # 施術ギャラリー
 │   ├── Access.tsx        # Googleマップ・店舗情報
+│   ├── Registration.tsx  # 第一種動物取扱業登録（法定表示事項）
 │   ├── Contact.tsx       # 予約・問い合わせCTA
 │   └── Footer.tsx        # フッター
 ├── lib/
