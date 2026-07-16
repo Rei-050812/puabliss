@@ -11,17 +11,17 @@ export default function Registration() {
           動物取扱業登録
         </p>
 
-        <div className="bg-[#faf8f5] rounded-2xl border border-[#e0d4c0] px-5 py-6 text-left">
+        <div className="max-w-xl mx-auto bg-[#faf8f5] rounded-2xl border border-[#e0d4c0] px-5 py-6">
           <p className="text-sm font-bold text-[#4b6345] text-center mb-4">
             {ANIMAL_HANDLER_REGISTRATION.title}
           </p>
           <dl className="space-y-2 max-w-md mx-auto">
             {ANIMAL_HANDLER_REGISTRATION.rows.map((row) => (
-              <div key={row.label} className="flex gap-3 text-xs leading-relaxed">
-                <dt className="text-[#4b6345] font-bold min-w-[10.5em] shrink-0">
+              <div key={row.label} className="flex gap-4 text-xs leading-relaxed">
+                <dt className="text-[#4b6345] font-bold flex-1 text-right">
                   {row.label}
                 </dt>
-                <dd className="text-[#5a4a3a]">{row.value}</dd>
+                <dd className="text-[#5a4a3a] flex-1 text-left">{row.value}</dd>
               </div>
             ))}
           </dl>
