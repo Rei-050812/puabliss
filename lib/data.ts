@@ -99,7 +99,7 @@ export const HERO_IMAGES = [
   { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル", pos: "50% 30%" },
   { id: 3, src: "/images/hero-03.jpg", alt: "見つめるダックスフンド2匹", pos: "50% 40%" },
   { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん", pos: "50% 50%" },
-  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル", pos: "50% 45%" },
+  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル", pos: "50% 50%" },
   { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド", pos: "50% 50%" },
 ];
 
