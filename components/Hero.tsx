@@ -42,14 +42,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href={SALON_INFO.lineUrl}
-              className="flex items-center justify-center gap-2 bg-[#06C755] text-white font-bold py-4 px-8 rounded-full text-sm hover:bg-[#05b34b] transition-colors shadow-lg"
+              className="flex items-center justify-center gap-2 bg-[#06C755]/90 text-white font-bold py-4 px-8 rounded-full text-sm hover:bg-[#05b34b] transition-colors shadow-lg"
             >
               <LineIcon />
               LINEで予約する
             </a>
             <a
               href={`tel:${SALON_INFO.tel}`}
-              className="flex items-center justify-center gap-2 bg-white/90 text-[#3d2b1f] font-bold py-4 px-8 rounded-full text-sm hover:bg-white transition-colors shadow-lg"
+              className="flex items-center justify-center gap-2 bg-white/80 text-[#3d2b1f] font-bold py-4 px-8 rounded-full text-sm hover:bg-white transition-colors shadow-lg"
             >
               <PhoneIcon />
               電話する
