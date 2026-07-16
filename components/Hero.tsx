@@ -20,12 +20,12 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/30" />
 
-      {/* Content */}
-      <div className="absolute inset-0 z-10 flex items-end pb-16 md:pb-20">
-        <div className="w-full max-w-5xl mx-auto px-5 text-center">
+      {/* Content — コラージュ中央に配置 */}
+      <div className="absolute inset-0 z-10 flex items-center justify-center px-5">
+        <div className="w-full max-w-xl text-center">
           <p className="text-[#e8dcc8] text-xs tracking-[0.2em] mb-3 font-light">
             {SALON_INFO.tagline}
           </p>
