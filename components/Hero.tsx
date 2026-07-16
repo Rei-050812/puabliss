@@ -32,8 +32,6 @@ export default function Hero() {
             やさしいトリミングを。
           </h1>
           <p className="text-[#e8dcc8]/90 text-sm mb-8 leading-relaxed">
-            はじめての子も、苦手な子も大歓迎。
-            <br />
             その子のペースに寄り添う
             <br />
             やさしいトリミングをお届けします。
