@@ -3,11 +3,11 @@ import { HERO_IMAGES, SALON_INFO } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative">
-      {/* Photo collage（正方形タイル / SP: 2列×3段 / PC: 3列×2段） */}
-      <div className="grid grid-cols-2 md:grid-cols-3">
+    <section id="top" className="relative min-h-[75vh]">
+      {/* Photo collage（縦長タイル / SP: 2列×3段 / PC: 3列×2段 — TOPイメージ画像と同じトリミング） */}
+      <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-3">
         {HERO_IMAGES.map((img, i) => (
-          <div key={img.id} className="relative aspect-square">
+          <div key={img.id} className="relative">
             <Image
               src={img.src}
               alt={img.alt}
@@ -23,8 +23,8 @@ export default function Hero() {
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/30" />
 
-      {/* Content — コラージュ中央に配置 */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center px-5">
+      {/* Content — TOPイメージ画像と同じ位置（コラージュ中央よりやや上） */}
+      <div className="absolute inset-0 z-10 flex items-end justify-center px-5 pb-40 md:pb-32">
         <div className="w-full max-w-xl text-center">
           <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-0">
             大切な家族に、
