@@ -83,9 +83,10 @@ export const GALLERY_IMAGES = [
   { id: 2, src: "/images/gallery-02.jpg", alt: "施術後のわんちゃん②" },
   { id: 3, src: "/images/gallery-03.jpg", alt: "施術後のわんちゃん③" },
   { id: 4, src: "/images/gallery-04.jpg", alt: "施術後のわんちゃん④" },
-  // TODO: 残り2枚（れんらくちょう・グレーファーのプードル）はクライアントから受領後に差し替え
-  { id: 5, src: "/images/gallery-05.png", alt: "施術後のわんちゃん⑤" },
-  { id: 6, src: "/images/gallery-06.png", alt: "施術後のわんちゃん⑥" },
+  // TODO: 本来の指定写真（れんらくちょう・グレーファーのプードル）受領後に差し替え。
+  // それまではトップと同じ写真を流用（ストック仮画像は廃止）
+  { id: 5, src: "/images/gallery-05.jpg", alt: "施術後のわんちゃん⑤" },
+  { id: 6, src: "/images/gallery-06.jpg", alt: "施術後のわんちゃん⑥" },
 ];
 
 export const ABOUT_IMAGES = [
@@ -94,14 +95,15 @@ export const ABOUT_IMAGES = [
   { id: 3, src: "/images/about-03.jpg", alt: "看板犬たち" },
 ];
 
-// トップの2列×3段コラージュ（クライアント指定の並び順）
+// トップの正方形コラージュ（クライアント指定の並び順）
+// pos は object-position（顔が見切れないよう写真ごとに調整）
 export const HERO_IMAGES = [
-  { id: 1, src: "/images/hero-01.jpg", alt: "白いラグでくつろぐわんちゃんたち" },
-  { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル" },
-  { id: 3, src: "/images/hero-03.jpg", alt: "見つめるダックスフンド2匹" },
-  { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん" },
-  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル" },
-  { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド" },
+  { id: 1, src: "/images/hero-01.jpg", alt: "白いラグでくつろぐわんちゃんたち", pos: "50% 35%" },
+  { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル", pos: "50% 30%" },
+  { id: 3, src: "/images/hero-03.jpg", alt: "見つめるダックスフンド2匹", pos: "50% 40%" },
+  { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん", pos: "50% 50%" },
+  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル", pos: "50% 45%" },
+  { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド", pos: "50% 50%" },
 ];
 
 export const LOGO_IMAGE = {

@@ -3,17 +3,18 @@ import { HERO_IMAGES, SALON_INFO } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-[75vh] flex items-end pb-16 md:pb-20">
-      {/* Background photo collage（SP: 2列×3段 / PC: 3列×2段） */}
-      <div className="absolute inset-0 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2">
+    <section id="top" className="relative">
+      {/* Photo collage（正方形タイル / SP: 2列×3段 / PC: 3列×2段） */}
+      <div className="grid grid-cols-2 md:grid-cols-3">
         {HERO_IMAGES.map((img, i) => (
-          <div key={img.id} className="relative">
+          <div key={img.id} className="relative aspect-square">
             <Image
               src={img.src}
               alt={img.alt}
               fill
               priority={i < 2}
               className="object-cover"
+              style={{ objectPosition: img.pos }}
               sizes="(max-width: 768px) 50vw, 34vw"
             />
           </div>
@@ -23,8 +24,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-5 text-center">
-        <div className="mx-auto">
+      <div className="absolute inset-0 z-10 flex items-end pb-16 md:pb-20">
+        <div className="w-full max-w-5xl mx-auto px-5 text-center">
           <p className="text-[#e8dcc8] text-xs tracking-[0.2em] mb-3 font-light">
             {SALON_INFO.tagline}
           </p>

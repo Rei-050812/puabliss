@@ -85,8 +85,7 @@ lib/data.ts
 | `images/about-01.jpg` | サロン紹介①（外観） |
 | `images/about-02.jpg` | サロン紹介②（ドッグショー） |
 | `images/about-03.jpg` | サロン紹介③（看板犬） |
-| `images/gallery-01.jpg` ～ `gallery-04.jpg` | ギャラリー施術写真 |
-| `images/gallery-05.png`・`gallery-06.png` | ギャラリー仮画像（クライアントから残り2枚受領後に差し替え） |
+| `images/gallery-01.jpg` ～ `gallery-06.jpg` | ギャラリー施術写真（05・06はトップ写真の流用。指定写真の受領後に差し替え） |
 
 ## SEO 設定
 
