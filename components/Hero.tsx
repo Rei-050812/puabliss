@@ -31,7 +31,7 @@ export default function Hero() {
             <br />
             やさしいトリミングを。
           </h1>
-          <p className="text-[#e8dcc8]/90 text-sm mb-10 md:mb-5 leading-tight -mt-1">
+          <p className="text-[#e8dcc8]/90 text-sm mb-16 md:mb-10 leading-tight -mt-1">
             その子のペースに寄り添う
             <br />
             やさしいトリミングをお届けします。
