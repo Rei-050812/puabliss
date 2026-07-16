@@ -25,12 +25,12 @@ export default function Hero() {
       {/* Content — コラージュ中央に配置（SPはやや上へ、PCはボタンだけ少し上へ） */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-5 pb-6 md:pb-0">
         <div className="w-full max-w-xl text-center">
-          <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-0 mt-12 md:mt-0">
+          <h1 className="text-white text-2xl md:text-4xl font-bold leading-tight mb-0 mt-12 md:mt-0">
             大切な家族に、
             <br />
             やさしいトリミングを。
           </h1>
-          <p className="text-[#e8dcc8]/90 text-sm mb-40 md:mb-10 leading-tight -mt-1">
+          <p className="text-[#e8dcc8]/90 text-sm mb-32 md:mb-10 leading-tight -mt-1">
             その子のペースに寄り添う
             <br />
             やさしいトリミングをお届けします。
