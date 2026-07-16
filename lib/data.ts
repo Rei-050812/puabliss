@@ -92,15 +92,14 @@ export const ABOUT_IMAGES = [
   { id: 3, src: "/images/about-03.jpg", alt: "看板犬たち" },
 ];
 
-// トップの正方形コラージュ（クライアント指定の並び順）
-// pos は object-position（顔が見切れないよう写真ごとに調整）
+// トップのコラージュ（クライアント指定の並び順）
 export const HERO_IMAGES = [
-  { id: 1, src: "/images/hero-01.jpg", alt: "白いラグでくつろぐわんちゃんたち", pos: "50% 35%" },
-  { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル", pos: "50% 30%" },
-  { id: 3, src: "/images/hero-03.jpg", alt: "ダックスフンド", pos: "50% 80%" },
-  { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん", pos: "50% 50%" },
-  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル", pos: "50% 50%" },
-  { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド", pos: "50% 50%" },
+  { id: 1, src: "/images/hero-01.jpg", alt: "白いラグでくつろぐわんちゃんたち" },
+  { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル" },
+  { id: 3, src: "/images/hero-03.jpg", alt: "ダックスフンド" },
+  { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん" },
+  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル" },
+  { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド" },
 ];
 
 export const LOGO_IMAGE = {

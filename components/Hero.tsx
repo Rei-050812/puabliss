@@ -14,7 +14,6 @@ export default function Hero() {
               fill
               priority={i < 2}
               className="object-cover"
-              style={{ objectPosition: img.pos }}
               sizes="(max-width: 768px) 50vw, 34vw"
             />
           </div>
