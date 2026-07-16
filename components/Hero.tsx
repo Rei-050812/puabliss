@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Content — コラージュ中央に配置 */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-5">
         <div className="w-full max-w-xl text-center">
-          <h1 className="text-white text-3xl md:text-4xl font-bold leading-snug mb-4">
+          <h1 className="text-white text-3xl md:text-4xl font-bold leading-snug mb-1">
             大切な家族に、
             <br />
             やさしいトリミングを。
