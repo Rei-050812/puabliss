@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { INTERIOR_IMAGES, SALON_INFO } from "@/lib/data";
+import { ABOUT_IMAGES, SALON_INFO } from "@/lib/data";
 
 export default function About() {
   return (
@@ -12,9 +12,9 @@ export default function About() {
           サロン紹介
         </p>
 
-        {/* Interior photos */}
+        {/* サロン紹介写真（外観・ドッグショー・看板犬） */}
         <div className="grid grid-cols-3 gap-2 md:gap-3 mb-10">
-          {INTERIOR_IMAGES.map((img) => (
+          {ABOUT_IMAGES.map((img) => (
             <div key={img.id} className="relative aspect-square rounded-xl overflow-hidden">
               <Image
                 src={img.src}

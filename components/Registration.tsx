@@ -15,13 +15,13 @@ export default function Registration() {
           <p className="text-sm font-bold text-[#4b6345] text-center mb-4">
             {ANIMAL_HANDLER_REGISTRATION.title}
           </p>
-          <dl className="space-y-2 max-w-md mx-auto">
+          <dl className="w-fit mx-auto space-y-2 text-left">
             {ANIMAL_HANDLER_REGISTRATION.rows.map((row) => (
               <div key={row.label} className="flex gap-4 text-xs leading-relaxed">
-                <dt className="text-[#4b6345] font-bold flex-1 text-right">
+                <dt className="text-[#4b6345] font-bold min-w-[10.5em] shrink-0">
                   {row.label}
                 </dt>
-                <dd className="text-[#5a4a3a] flex-1 text-left">{row.value}</dd>
+                <dd className="text-[#5a4a3a]">{row.value}</dd>
               </div>
             ))}
           </dl>

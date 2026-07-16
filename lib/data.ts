@@ -79,24 +79,30 @@ export const SERVICE_NOTE =
 // 画像
 // ─────────────────────────────────────────────
 export const GALLERY_IMAGES = [
-  { id: 1, src: "/images/gallery-01.png", alt: "施術後のわんちゃん①" },
-  { id: 2, src: "/images/gallery-02.png", alt: "施術後のわんちゃん②" },
-  { id: 3, src: "/images/gallery-03.png", alt: "施術後のわんちゃん③" },
-  { id: 4, src: "/images/gallery-04.png", alt: "施術後のわんちゃん④" },
+  { id: 1, src: "/images/gallery-01.jpg", alt: "施術後のわんちゃん①" },
+  { id: 2, src: "/images/gallery-02.jpg", alt: "施術後のわんちゃん②" },
+  { id: 3, src: "/images/gallery-03.jpg", alt: "施術後のわんちゃん③" },
+  { id: 4, src: "/images/gallery-04.jpg", alt: "施術後のわんちゃん④" },
+  // TODO: 残り2枚（れんらくちょう・グレーファーのプードル）はクライアントから受領後に差し替え
   { id: 5, src: "/images/gallery-05.png", alt: "施術後のわんちゃん⑤" },
   { id: 6, src: "/images/gallery-06.png", alt: "施術後のわんちゃん⑥" },
 ];
 
-export const INTERIOR_IMAGES = [
-  { id: 1, src: "/images/interior-01.png", alt: "サロン内装①" },
-  { id: 2, src: "/images/interior-02.png", alt: "サロン内装②" },
-  { id: 3, src: "/images/interior-03.png", alt: "サロン併設ドッグラン" },
+export const ABOUT_IMAGES = [
+  { id: 1, src: "/images/about-01.jpg", alt: "サロン外観" },
+  { id: 2, src: "/images/about-02.jpg", alt: "ドッグショーにて" },
+  { id: 3, src: "/images/about-03.jpg", alt: "看板犬たち" },
 ];
 
-export const HERO_IMAGE = {
-  src: "/images/hero.png",
-  alt: "Pua Bliss トリミングサロン メインビジュアル",
-};
+// トップの2列×3段コラージュ（クライアント指定の並び順）
+export const HERO_IMAGES = [
+  { id: 1, src: "/images/hero-01.jpg", alt: "白いラグでくつろぐわんちゃんたち" },
+  { id: 2, src: "/images/hero-02.jpg", alt: "黒いコッカースパニエル" },
+  { id: 3, src: "/images/hero-03.jpg", alt: "見つめるダックスフンド2匹" },
+  { id: 4, src: "/images/hero-04.jpg", alt: "砂浜のわんちゃん" },
+  { id: 5, src: "/images/hero-05.jpg", alt: "砂浜の黒いコッカースパニエル" },
+  { id: 6, src: "/images/hero-06.jpg", alt: "たんぽぽの花冠をのせたダックスフンド" },
+];
 
 export const LOGO_IMAGE = {
   src: "/logo.png",

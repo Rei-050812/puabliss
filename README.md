@@ -64,8 +64,8 @@ lib/data.ts
 ├── OPTIONS         # オプションメニュー
 ├── SERVICE_NOTE    # 料金注意書き
 ├── GALLERY_IMAGES  # ギャラリー画像パス
-├── INTERIOR_IMAGES # 内装画像パス
-├── HERO_IMAGE      # ヒーロー画像パス
+├── ABOUT_IMAGES    # サロン紹介画像パス（外観・ドッグショー・看板犬）
+├── HERO_IMAGES     # ヒーローコラージュ画像パス（6枚・SP 2列×3段 / PC 3列×2段）
 ├── LOGO_IMAGE      # ロゴ画像パス
 └── ANIMAL_HANDLER_REGISTRATION # 第一種動物取扱業登録（法定表示事項）
 ```
@@ -79,13 +79,14 @@ lib/data.ts
 | `logo.png` | ヘッダーロゴ（犬イラスト＋Pua Bliss文字・透過PNG） |
 | `texture-green.jpeg` | グリーンスエードテクスチャ（ヘッダー・サービスセクション背景） |
 | `texture-beige.jpg` | ベージュテクスチャ（About・Gallery・Access・Registrationセクション背景） |
-| `images/hero.png` | ヒーロービジュアル（店舗外観） |
+| `images/hero-01.jpg` ～ `hero-06.jpg` | ヒーローコラージュ（わんちゃん写真6枚） |
 | `images/og-image.png` | OGP画像（SNSシェア時のサムネイル・1200×630px） |
 | `images/logo.svg` | ファビコン（花のアイコン） |
-| `images/interior-01.png` | 内装①（サロン内観） |
-| `images/interior-02.png` | 内装②（トリミング台） |
-| `images/interior-03.png` | 内装③（ドッグラン） |
-| `images/gallery-01.png` ～ `gallery-06.png` | ギャラリー施術写真 |
+| `images/about-01.jpg` | サロン紹介①（外観） |
+| `images/about-02.jpg` | サロン紹介②（ドッグショー） |
+| `images/about-03.jpg` | サロン紹介③（看板犬） |
+| `images/gallery-01.jpg` ～ `gallery-04.jpg` | ギャラリー施術写真 |
+| `images/gallery-05.png`・`gallery-06.png` | ギャラリー仮画像（クライアントから残り2枚受領後に差し替え） |
 
 ## SEO 設定
 

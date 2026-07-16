@@ -1,22 +1,26 @@
 import Image from "next/image";
-import { HERO_IMAGE, SALON_INFO } from "@/lib/data";
+import { HERO_IMAGES, SALON_INFO } from "@/lib/data";
 
 export default function Hero() {
   return (
     <section id="top" className="relative min-h-[75vh] flex items-end pb-16 md:pb-20">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src={HERO_IMAGE.src}
-          alt={HERO_IMAGE.alt}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+      {/* Background photo collage（SP: 2列×3段 / PC: 3列×2段） */}
+      <div className="absolute inset-0 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2">
+        {HERO_IMAGES.map((img, i) => (
+          <div key={img.id} className="relative">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              priority={i < 2}
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, 34vw"
+            />
+          </div>
+        ))}
       </div>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-5xl mx-auto px-5 text-center">
