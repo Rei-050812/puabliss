@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Content — コラージュ中央に配置 */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-5">
         <div className="w-full max-w-xl text-center">
-          <h1 className="text-white text-3xl md:text-4xl font-bold leading-relaxed mb-4">
+          <h1 className="text-white text-3xl md:text-4xl font-bold leading-snug mb-4">
             大切な家族に、
             <br />
             やさしいトリミングを。
@@ -34,7 +34,9 @@ export default function Hero() {
           <p className="text-[#e8dcc8]/90 text-sm mb-8 leading-relaxed">
             はじめての子も、苦手な子も大歓迎。
             <br />
-            その子のペースに寄り添う、やさしいトリミングをお届けします。
+            その子のペースに寄り添う
+            <br />
+            やさしいトリミングをお届けします。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
