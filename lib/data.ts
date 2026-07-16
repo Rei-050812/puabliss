@@ -83,10 +83,8 @@ export const GALLERY_IMAGES = [
   { id: 2, src: "/images/gallery-02.jpg", alt: "施術後のわんちゃん②" },
   { id: 3, src: "/images/gallery-03.jpg", alt: "施術後のわんちゃん③" },
   { id: 4, src: "/images/gallery-04.jpg", alt: "施術後のわんちゃん④" },
-  // TODO: 本来の指定写真（れんらくちょう・グレーファーのプードル）受領後に差し替え。
-  // それまではトップと同じ写真を流用（ストック仮画像は廃止）
-  { id: 5, src: "/images/gallery-05.jpg", alt: "施術後のわんちゃん⑤" },
-  { id: 6, src: "/images/gallery-06.jpg", alt: "施術後のわんちゃん⑥" },
+  { id: 5, src: "/images/gallery-05.jpg", alt: "れんらくちょう" },
+  { id: 6, src: "/images/gallery-06.jpg", alt: "グレーのファーに座るプードル" },
 ];
 
 export const ABOUT_IMAGES = [
