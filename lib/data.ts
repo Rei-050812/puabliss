@@ -8,7 +8,6 @@ export const SITE_URL = "https://puabliss.jp";
 export const SALON_INFO = {
   name: "Pua Bliss",
   nameKana: "プアブリス",
-  tagline: "Natural Trimming Salon",
   owner: "田邉 凜々花",
   ownerTitle: "Owner Trimmer",
   ownerComment:

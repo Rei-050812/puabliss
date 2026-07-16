@@ -26,9 +26,6 @@ export default function Hero() {
       {/* Content — コラージュ中央に配置 */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-5">
         <div className="w-full max-w-xl text-center">
-          <p className="text-[#e8dcc8] text-xs tracking-[0.2em] mb-3 font-light">
-            {SALON_INFO.tagline}
-          </p>
           <h1 className="text-white text-3xl md:text-4xl font-bold leading-relaxed mb-4">
             大切な家族に、
             <br />
