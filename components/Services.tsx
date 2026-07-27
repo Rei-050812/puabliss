@@ -81,7 +81,7 @@ export default function Services() {
 
         {/* 注意書き */}
         <div className="text-center mt-6 pt-4 border-t border-dashed border-white/20">
-          <p className="text-xs text-white/70 font-bold">
+          <p className="text-xs text-white font-bold">
             ※ 毛量・体格・毛玉・もつれの状態により
             <br className="sm:hidden" />
             料金が変動する場合があります
