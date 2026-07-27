@@ -1,4 +1,4 @@
-import { SERVICES, OPTIONS, SERVICE_NOTE_INQUIRY, SALON_INFO } from "@/lib/data";
+import { SERVICES, OPTIONS, SALON_INFO } from "@/lib/data";
 
 function CarIcon() {
   return (
@@ -87,7 +87,9 @@ export default function Services() {
             料金が変動する場合があります
           </p>
           <p className="text-xs text-white font-bold mt-2">
-            {SERVICE_NOTE_INQUIRY}
+            ※料金表に表記のない犬種・メニューの金額は
+            <br />
+            お問い合わせください
           </p>
         </div>
       </div>
