@@ -39,11 +39,11 @@ export const SERVICES = [
     prices: [
       { breed: "チワワ", price: "¥3,700〜" },
       { breed: "ダックス", price: "¥4,000〜" },
-      { breed: "プードル", price: "¥5,800〜" },
-      { breed: "シュナウザー", price: "¥5,600〜" },
+      { breed: "ミニピン", price: "¥4,500〜" },
+      { breed: "シェルティー", price: "¥8,300〜" },
       { breed: "柴犬", price: "¥6,700〜" },
-      { breed: "フレブル", price: "¥5,000〜" },
-      { breed: "ラブラドール", price: "¥9,000〜" },
+      { breed: "フレブル", price: "¥5,900〜" },
+      { breed: "ラブラドール", price: "¥9,300〜" },
     ],
   },
   {
@@ -51,12 +51,11 @@ export const SERVICES = [
     name: "シャンプー・カットコース",
     description: "",
     prices: [
-      { breed: "チワワ", price: "¥5,700〜" },
-      { breed: "ダックス", price: "¥6,000〜" },
-      { breed: "プードル", price: "¥8,500〜" },
-      { breed: "シュナウザー", price: "¥8,300〜" },
-      { breed: "ポメラニアン", price: "¥7,000〜" },
-      { breed: "アメリカン・コッカー", price: "¥11,000〜" },
+      { breed: "チワワ", price: "¥6,000〜" },
+      { breed: "プードル", price: "¥9,000〜" },
+      { breed: "シュナウザー", price: "¥8,500〜" },
+      { breed: "ポメラニアン", price: "¥7,500〜" },
+      { breed: "アメリカン・コッカー", price: "¥12,000〜" },
       { breed: "スタンダードプードル", price: "¥22,000〜" },
     ],
   },
@@ -64,15 +63,18 @@ export const SERVICES = [
 
 export const OPTIONS = [
   { name: "歯磨き", price: "¥500〜" },
-  { name: "ハーブパック", price: "¥1,300〜" },
-  { name: "泡パック", price: "¥1,200〜" },
+  { name: "ハーブパック", price: "¥2,000〜" },
+  { name: "泡パック", price: "¥1,500〜" },
   { name: "ホワイトシャンプー", price: "¥500〜" },
-  { name: "部分カット", price: "+¥500〜" },
+  { name: "部分カット", price: "+¥700〜" },
   { name: "毛玉・もつれ", price: "+¥500〜" },
 ];
 
 export const SERVICE_NOTE =
   "※ 毛量・体格・毛玉・もつれの状態により料金が変動する場合があります";
+
+export const SERVICE_NOTE_INQUIRY =
+  "※料金表に表記のない犬種・メニューの金額はお問い合わせください";
 
 // ─────────────────────────────────────────────
 // 画像

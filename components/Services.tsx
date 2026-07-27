@@ -1,4 +1,4 @@
-import { SERVICES, OPTIONS, SERVICE_NOTE, SALON_INFO } from "@/lib/data";
+import { SERVICES, OPTIONS, SERVICE_NOTE_INQUIRY, SALON_INFO } from "@/lib/data";
 
 function CarIcon() {
   return (
@@ -85,6 +85,9 @@ export default function Services() {
             ※ 毛量・体格・毛玉・もつれの状態により
             <br className="sm:hidden" />
             料金が変動する場合があります
+          </p>
+          <p className="text-xs text-white font-bold mt-2">
+            {SERVICE_NOTE_INQUIRY}
           </p>
         </div>
       </div>
